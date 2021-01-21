@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+/*reset*/
+*{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	color:#00CD66;
+}
+.titulo-secundario{
+	font-weight:normal;
+	font-size:20px;
+	padding:10px;
+	color:gray;
+	margin-bottom:10px;
+}
+table{
+	padding:2px;
+	border-collapse:collapse;
+	color:rgba(0,0,0,0.7);
+}
+.tabela{
+	overflow-x: scroll;
+}
+table tr{
+	padding:2px;
+	border:1px solid black;
+	border:1px solid rgba(0,0,0,0.3);
+}
+table th{
+	padding:10px;
+	font-size:12px;
+	border:1px solid black;
+	border:1px solid rgba(0,0,0,0.3);
+}
+table td{
+	padding:15px;
+	width:81px;
+	border:1px solid black;
+	text-align:center;
+	font-size:12px;
+	border:1px solid rgba(0,0,0,0.3);
+}
+form{
+    padding:10px;
+}
+textarea{
+	padding:10px;
+	font-size:12px;
+	width:300px;
+	height:100px;
+	margin-bottom:10px;
+	border-radius:5px;
+	border:1px solid rgba(0,0,0,0.3);
+}
+
+input{
+	padding:10px;
+	font-size:12px;
+	display:block;
+	margin-bottom:10px;
+	width:300px;
+	border-radius:5px;
+	border:1px solid rgba(0,0,0,0.3);
+}
+select{
+	padding:10px;
+	font-size: 12px;
+	margin-bottom:10px;
+	border-radius: 5px;
+	border:1px solid rgba(0, 0, 0,0.3);
+	color:gray;
+}
+.formulario {
+    margin-bottom: 30px;
+}
+button{
+	display:block;
+	width:100px;
+	position: relative;
+    padding:10px;
+    color: white;
+    border-radius:5px;
+	font-family: Arial, Helvetica, sans-serif;
+	border:none;
+	margin-right: 10px;
+}
+.busca{
+	display:inline-block;
+	width:250px;
+}
+.btn-busca{
+	display:inline-block;
+	padding:10px;
+	border-radius: 5px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:rgba(0,0,0,0.7);
+}
+.position-button{
+    margin-top: 30px;
+    display: block;
+}
+.btn-cadastrar{
+    float: left;
+    background-color: #00CD66;
+}
+.btn-alterar {
+    float: left;
+    background-color: #6b6b6b;
+}
+.btn-excluir{
+	background-color: #f34336;
+   
+}
+.registros{
+	padding:10px;
+}
+.registros select{
+	padding:5px;
+}
+.icone{
+	font-size:25px;
+	color:#00CD66;
+}
+
+/*Formulário pessoa*/
+.pessoa-fisica{
+	float:left;
+	margin-right:70px;
+}
+
+/*Formulário produto */
+.produto{
+	float:left;
+	margin-right:70px;
+}
