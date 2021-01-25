@@ -175,48 +175,56 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+        
+         <c:if test="${not empty errors}">
+            <div class="alert alert-danger" role="alert">
+              <c:forEach var="error" items="${errors}">
+                 ${error.message}<br/>
+              </c:forEach>
+             </div>
+          </c:if>
 
           <!-- Page Heading -->
           <main class="tela-principal">
             <section class="conteudo">
-              <form action="" method="post" class="user">
+              <form action="cadastropecas/salvapecas" method="post" class="user">
                 <div class="produto">
                   <h3 >Cadastrar Peças</h2>
                   <hr>
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                      <input type="text" name="nome_produto" class="form-control form-control-user" placeholder="Nome Produto*">
+                      <input type="text" name="pecas.nomePeca" class="form-control form-control-user" placeholder="Nome Produto*">
                     </div>
 
                     <div class="col-sm-2 mb-3 mb-sm-0">
-                      <input type="text" name="cod_produto" class="form-control form-control-user" placeholder="Cod. Produto">
+                      <input type="text" name="pecas.codPeca" class="form-control form-control-user" placeholder="Cod. Produto">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <input type="text" name="motor" class="form-control form-control-user" placeholder="Motor">
+                      <input type="text" name="pecas.motorPeca" class="form-control form-control-user" placeholder="Motor">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <input type="text" name="marca" class="form-control form-control-user" placeholder="Marca">
+                      <input type="text" name="pecas.marcaPeca" class="form-control form-control-user" placeholder="Marca">
                     </div>               
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-3 mb-3 mb-sm-0">
-                      <input type="text" name="qtd." class="form-control form-control-user" placeholder="Quantidade*">
+                      <input type="text" name="pecas.qtdPeca" class="form-control form-control-user" placeholder="Quantidade*">
                     </div>
                     <div class="col-sm-3 mb-3 mb-sm-0">
-                      <input type="text" name="valor" class="form-control form-control-user" placeholder="Valor*">
+                      <input type="text" name="pecas.valorPeca" class="form-control form-control-user" placeholder="Valor*">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <textarea class="form-control form-control-user" placeholder="Informações Adicionais"></textarea>
+                      <textarea class="form-control form-control-user" name="pecas.informacoesAdPeca" placeholder="Informações Adicionais"></textarea>
                     </div>
                     
                   </div>
