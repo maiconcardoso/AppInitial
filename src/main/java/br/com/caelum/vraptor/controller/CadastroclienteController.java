@@ -8,6 +8,7 @@ import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.dao.ClienteDAO;
+import br.com.caelum.vraptor.interceptor.IncludeParameters;
 import br.com.caelum.vraptor.model.Cliente;
 import br.com.caelum.vraptor.validator.Validator;
 
@@ -22,6 +23,7 @@ public class CadastroclienteController {
 	@Inject ClienteDAO clienteDAO;
 	@Inject Validator validadorCliente;
 	
+	@IncludeParameters
 	@Post("salvacliente")
 	public void salvacliente(@Valid Cliente cliente) {
 		

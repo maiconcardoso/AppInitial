@@ -32,7 +32,7 @@ public class LoginController {
 		validador.onErrorRedirectTo(this).login();
 		
 		//logando usuario
-		usuarioDao.selectPorId(user);
+		usuarioDao.getClass();	
 		
 		//redirencionando
 		result.redirectTo(IndexController.class).index();

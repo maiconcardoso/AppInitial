@@ -174,54 +174,62 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
+        
+          <c:if test="${not empty errors}">
+            <div class="alert alert-danger" role="alert">
+              <c:forEach var="error" items="${errors}">
+                 ${error.message}<br/>
+              </c:forEach>
+             </div>
+          </c:if>
+          
           <!-- Page Heading -->
           <main class="tela-principal">
             <section class="conteudo">
-              <form action="cliente.jsp" method="post" class="user">
+              <form action="cadastrofornecedor/salvafornecedor" method="post" class="user">
                 <div class="formulario">
                   <h3>Cadastrar Fornecedor</h3>
                   <hr>
                    <h4 class="titulo-secundario">Pessoa Física</h4>
                       <div class="form-group row">
                         <div class="col-sm-4 mb-3 mb-sm-0">
-                          <input type="text" name="nome" class="form-control form-control-user" placeholder="Nome / Razão Social*">
+                          <input type="text" name="fornecedor.nomeFornecedor" value="${fornecedor.nomeFornecedor}" class="form-control form-control-user" placeholder="Nome / Razão Social*">
                         </div>
                         <div class="col-sm-3 mb-3 mb-sm-0">
-                          <input type="text" name="cpf" class="form-control form-control-user" placeholder="CPF / CNPJ">
+                          <input type="text" name="fornecedor.cpfFornecedor" value="${fornecedor.cpfFornecedor}" class="form-control form-control-user" placeholder="CPF / CNPJ">
                         </div>
                       </div>
                       
                       <div class="form-group row">
                         <div class="col-sm-5 mb-3 mb-sm-0">
-                          <input type="text" name="endereco" class="form-control form-control-user" placeholder="Endereço*">
+                          <input type="text" name="fornecedor.enderecoFornecedor" value="${fornecedor.enderecoFornecedor}" class="form-control form-control-user" placeholder="Endereço*">
                         </div>
                         <div class="col-sm-2 mb-3 mb-sm-0">
-                          <input type="text" name="cep" class="form-control form-control-user" placeholder="CEP">
+                          <input type="text" name="fornecedor.cepFornecedor" class="form-control form-control-user" placeholder="CEP">
                         </div>
                       </div>
                     
                       <div class="form-group row">
                         <div class="col-sm-4 mb-3 mb-sm-0">
-                          <input type="text" name="cidade" class="form-control form-control-user" placeholder="Cidade">  
+                          <input type="text" name="fornecedor.cidadeFornecedor" class="form-control form-control-user" placeholder="Cidade">  
                         </div>
                         <div class="col-sm-3 mb-3 mb-sm-0">
-                          <input type="call" name="telefone" class="form-control form-control-user" placeholder="Telefone Fixo">   
+                          <input type="call" name="fornecedor.telefoneFornecedor" class="form-control form-control-user" placeholder="Telefone Fixo">   
                         </div>  
                       </div>
 
                       <div class="form-group row">
                         <div class="col-sm-4 mb-3 mb-sm-0">
-                          <input type="email" name="email" class="form-control form-control-user" placeholder="E-Mail">   
+                          <input type="email" name="fornecedor.emailFornecedor" class="form-control form-control-user" placeholder="E-Mail">   
                         </div>
                         <div class="col-sm-3 mb-3 mb-sm-0">
-                          <input type="call" name="whatsapp" class="form-control form-control-user" placeholder="Whatsapp/Celular">   
+                          <input type="call" name="fornecedor.whatsappFornecedor" class="form-control form-control-user" placeholder="Whatsapp/Celular">   
                         </div> 
                       </div>
                      
                       <div class="form-group row">
                         <div class="col-sm-7 mb-3 mb-sm-0">
-                          <textarea class="form-control form-control-user" placeholder="Informações Adicionais"></textarea>  
+                          <textarea class="form-control form-control-user" name="fornecedor.informacoesAdFornecedor" placeholder="Informações Adicionais"></textarea>  
                         </div>
                       </div>
                     </div>

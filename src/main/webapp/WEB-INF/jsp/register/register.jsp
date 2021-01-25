@@ -53,25 +53,25 @@
                             <form method="post" class="user" action="<c:url value='register/salvausuario' />">
                                 <div class="form-group row">
                                     <div class="col-sm-8 mb-3 mb-sm-0">
-                                        <input name="user.nomeUsuario" type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        <input name="user.nomeUsuario" value="${user.nomeUsuario}" type="text" class="form-control form-control-user" id="exampleFirstName"
                                             placeholder="Nome*">
                                     </div>
                                     <div class="col-sm-4">
-                                        <input name="user.loginUsuario" type="text" class="form-control form-control-user loginUser" id="exampleLastName"
+                                        <input name="user.loginUsuario" value="${user.loginUsuario}" type="text" class="form-control form-control-user loginUser" id="exampleLastName"
                                             placeholder="Login*">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input name="user.emailUsuario" type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input name="user.emailUsuario" value="${user.emailUsuario}" type="email" class="form-control form-control-user" id="exampleInputEmail"
                                         placeholder="Email">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input name="user.senhaUsuario" type="password" class="form-control form-control-user"
+                                        <input name="user.senhaUsuario" value="${user.senhaUsuario}" type="password" class="form-control form-control-user"
                                             id="exampleInputPassword" placeholder="Senha*">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
+                                        <input type="password" name="confirmaSenha" value="${confirmaSenha}" class="form-control form-control-user"
                                             id="exampleRepeatPassword" placeholder="Confirme a Senha">
                                     </div>
                                 </div>

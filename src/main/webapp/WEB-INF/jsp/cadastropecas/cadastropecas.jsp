@@ -214,12 +214,6 @@
                     </div>
                   </div>
 
-                 <div class="form-group row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                      <input type="text" name="fornecedor" class="form-control form-control-user" placeholder="Fornecedor">
-                    </div>
-                  </div>
-
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                       <textarea class="form-control form-control-user" placeholder="Informações Adicionais"></textarea>

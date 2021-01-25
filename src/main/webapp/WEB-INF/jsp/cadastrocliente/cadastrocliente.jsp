@@ -191,43 +191,43 @@
                     <h4 class="titulo-secundario">Pessoa Física</h4>
                     <div class="form-group row">
                       <div class="col-sm-4 mb-3 mb-sm-0">
-                        <input type="text" name="cliente.nomeCliente" class="form-control form-control-user" placeholder="Nome / Razão Social*">
+                        <input type="text" name="cliente.nomeCliente" value="${cliente.nomeCliente}" class="form-control form-control-user" placeholder="Nome / Razão Social*">
                       </div>
                       <div class="col-sm-3 mb-3 mb-sm-0">
-                        <input type="text"  name="cliente.cpfCliente" class="form-control form-control-user" placeholder="CPF / CNPJ">
+                        <input type="text"  name="cliente.cpfCliente" value="${cliente.cpfCliente}" class="form-control form-control-user" placeholder="CPF / CNPJ">
                       </div>
                     </div>
                     
                     <div class="form-group row">
                       <div class="col-sm-5 mb-3 mb-sm-0">
-                        <input type="text" name="cliente.enderecoCliente" class="form-control form-control-user" placeholder="Endereço*">
+                        <input type="text" name="cliente.enderecoCliente" value="${cliente.enderecoCliente}" class="form-control form-control-user" placeholder="Endereço*">
                       </div>
                       <div class="col-sm-2 mb-3 mb-sm-0">
-                        <input type="text" name="cliente.cepCliente" class="form-control form-control-user" placeholder="CEP">
+                        <input type="text" name="cliente.cepCliente" value="${cliente.cepCliente}" class="form-control form-control-user" placeholder="CEP">
                       </div>
                     </div>
                   
                     <div class="form-group row">
                       <div class="col-sm-4 mb-3 mb-sm-0">
-                        <input type="text" name="cliente.cidadeCliente" class="form-control form-control-user" placeholder="Cidade">  
+                        <input type="text" name="cliente.cidadeCliente" value="${cliente.cidadeCliente}" class="form-control form-control-user" placeholder="Cidade">  
                       </div>
                       <div class="col-sm-3 mb-3 mb-sm-0">
-                        <input type="call" name="cliente.whatsappCliente" class="form-control form-control-user" placeholder="Whatsapp/Celular">   
+                        <input type="call" name="cliente.whatsappCliente" value="${cliente.whatsappCliente}" class="form-control form-control-user" placeholder="Whatsapp/Celular">   
                       </div>  
                     </div>
 
                     <div class="form-group row">
                       <div class="col-sm-4 mb-3 mb-sm-0">
-                        <input type="email" name="cliente.emailCliente" class="form-control form-control-user" placeholder="E-Mail">   
+                        <input type="email" name="cliente.emailCliente" value="${cliente.emailCliente}" class="form-control form-control-user" placeholder="E-Mail">   
                       </div>
                       <div class="col-sm-3 mb-3 mb-sm-0">
-                        <input type="call" name="cliente.telefoneCliente" class="form-control form-control-user" placeholder="Telefone Fixo">   
+                        <input type="call" name="cliente.telefoneCliente" value="${cliente.telefoneCliente}" class="form-control form-control-user" placeholder="Telefone Fixo">   
                       </div> 
                     </div>
                    
                     <div class="form-group row">
                       <div class="col-sm-7 mb-3 mb-sm-0">
-                        <textarea name="cliente.informacoesAdCliente" class="form-control form-control-user" placeholder="Informações Adicionais"></textarea>  
+                        <textarea name="cliente.informacoesAdCliente" value="${cliente.informacoesAdCliente}" class="form-control form-control-user" placeholder="Informações Adicionais"></textarea>  
                       </div>
                     </div>
                   </div>

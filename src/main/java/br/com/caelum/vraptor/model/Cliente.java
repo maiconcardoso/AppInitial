@@ -7,7 +7,6 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
 public class Cliente extends Model{
-	
 	@NotEmpty(message = "{Cliente.nomeCliente.emBranco}") @Size(min = 4, max = 60, message = "{Cliente.nomeCliente.size}")
 	private String nomeCliente;
 

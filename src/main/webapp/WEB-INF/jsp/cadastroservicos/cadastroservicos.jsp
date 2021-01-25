@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -13,6 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+  <script type="text/javascript">
+  function salvandoDados() {
+	  alert("Informações cadastradas com sucesso!");
+  }
+  
+  </script>
 
   <title>Cadastro de Serviços - AUTOSOFT</title>
 
@@ -174,67 +180,76 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+        
+        <c:if test="${not empty errors}">
+            <div class="alert alert-danger" role="alert">
+              <c:forEach var="error" items="${errors}">
+                 ${error.message}<br/>
+              </c:forEach>
+             </div>
+          </c:if>
 
           <!-- Page Heading -->
           <main class="tela-principal">
             <section class="conteudo">
-              <form action="" method="post" class="user">
+              <form action="cadastroservicos/salvaservico" method="post" class="user">
                 <div class="produto">
                   <h3 >Cadastrar Serviços</h2>
                   <hr>
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                      <input type="text" name="nome_servico" class="form-control form-control-user" placeholder="Nome Serviço*">
+                      <input type="text" name="servico.nomeServico" class="form-control form-control-user" placeholder="Nome Serviço*">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                      <input type="text" name="valor_servico" class="form-control form-control-user" placeholder="Valor Serviço">
+                      <input type="text" name="servico.valorServico" class="form-control form-control-user" placeholder="Valor Serviço">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                      <input type="text" name="qtd_servico" class="form-control form-control-user" placeholder="Quantidade de Serviços">
+                      <input type="text" name="servico.qtdServico" class="form-control form-control-user" placeholder="Quantidade de Serviços">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0" >
-                      <select class="form-control form-control-user"  placeholder="Marca" >
-                        <option value="1">VOLKSWAGEN</option> 
-                        <option value="2">FIAT</option> 
-                        <option value="3">FORD</option> 
-                        <option value="4">GM</option> 
-                        <option value="5">PEGEOUT</option>  
-                        <option value="6">RENAULT</option>  
-                        <option value="7">HONDA</option>  
-                        <option value="8">MERCEDES-BENZ</option>
-                        <option value="9">MITSUBISHI</option> 
-                        <option value="10">TOYOTA</option>  
-                        <option value="11">VOLVO</option> 
-                        <option value="12">HYUNDAI</option>
-                        <option value="13">CITROÃN</option>
-                        <option value="14">AUDI</option>  
+                      <select name="servico.marcaMotorServico" class="form-control form-user"  placeholder="Marca" >
+                        <option selected disabled  value="0">Marca do Veículo</option> 
+                        <option value="VOLKSWAGEN">VOLKSWAGEN</option> 
+                        <option value="FIAT">FIAT</option> 
+                        <option value="FORD">FORD</option> 
+                        <option value="GM">GM</option> 
+                        <option value="PEGEOUT">PEGEOUT</option>  
+                        <option value="RENAULT">RENAULT</option>  
+                        <option value="HONDA">HONDA</option>  
+                        <option value="MERCEDES-BENZ">MERCEDES-BENZ</option>
+                        <option value="MITSUBISHI">MITSUBISHI</option> 
+                        <option value="TOYOTA">TOYOTA</option>  
+                        <option value="VOLVO">VOLVO</option> 
+                        <option value="HYUNDAI">HYUNDAI</option>
+                        <option value="CITROËN">CITROËN</option>
+                        <option value="AUDI">AUDI</option>  
                       </select>
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                      <input type="text" name="motor" class="form-control form-control-user" placeholder="Motor">
+                      <input type="text" name="servico.motorCarroServico" class="form-control form-control-user" placeholder="Motor">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                      <textarea class="form-control form-control-user" placeholder="Informações Adicionais"></textarea>
+                      <textarea name="servico.informacoesAdServico" class="form-control form-control-user" placeholder="Informações Adicionais"></textarea>
                     </div>
                   </div>
 
                   <div class="position-button">
-                    <button class="btn btn-primary"  type="submit">Cadastrar</button>
+                    <button class="btn btn-primary" type="submit">Cadastrar</button>
                   </div>
                 </div>
               </form>
