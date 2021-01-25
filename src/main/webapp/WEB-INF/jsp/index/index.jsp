@@ -68,7 +68,7 @@
             <div class="bg-white py-2 collapse-inner rounded">
               <a class="collapse-item" href="cadastrocliente">Cliente</a>
               <a class="collapse-item" href="cadastrofornecedor">Fornecedor</a>
-              <a class="collapse-item" href="cadastroservicos">Serviçoos</a>
+              <a class="collapse-item" href="cadastroservicos">Serviços</a>
               <a class="collapse-item" href="cadastropecas">Peças</a>
               <a class="collapse-item" href="cadastroos">Ordem de Serviço</a>
             </div>

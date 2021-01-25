@@ -193,38 +193,38 @@
                   <hr>
                   <div class="form-group row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                      <input type="text" name="pecas.nomePeca" class="form-control form-control-user" placeholder="Nome Produto*">
+                      <input type="text" name="pecas.nomePeca" value="${pecas.nomePeca}" class="form-control form-control-user" placeholder="Nome Produto*">
                     </div>
 
                     <div class="col-sm-2 mb-3 mb-sm-0">
-                      <input type="text" name="pecas.codPeca" class="form-control form-control-user" placeholder="Cod. Produto">
+                      <input type="text" name="pecas.codPeca" value="${pecas.codPeca}" class="form-control form-control-user" placeholder="Cod. Produto">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <input type="text" name="pecas.motorPeca" class="form-control form-control-user" placeholder="Motor">
+                      <input type="text" name="pecas.motorPeca" value="${pecas.motorPeca}" class="form-control form-control-user" placeholder="Motor">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <input type="text" name="pecas.marcaPeca" class="form-control form-control-user" placeholder="Marca">
+                      <input type="text" name="pecas.marcaPeca" value="${pecas.marcaPeca}" class="form-control form-control-user" placeholder="Marca">
                     </div>               
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-3 mb-3 mb-sm-0">
-                      <input type="text" name="pecas.qtdPeca" class="form-control form-control-user" placeholder="Quantidade*">
+                      <input type="text" name="pecas.qtdPeca" value="${pecas.qtdPeca}" class="form-control form-control-user" placeholder="Quantidade*">
                     </div>
                     <div class="col-sm-3 mb-3 mb-sm-0">
-                      <input type="text" name="pecas.valorPeca" class="form-control form-control-user" placeholder="Valor*">
+                      <input type="text" name="pecas.valorPeca" value="${pecas.valorPeca}" class="form-control form-control-user" placeholder="Valor*">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                      <textarea class="form-control form-control-user" name="pecas.informacoesAdPeca" placeholder="Informações Adicionais"></textarea>
+                      <textarea class="form-control form-control-user" name="pecas.informacoesAdPeca" value="${pecas.informacoesAdPeca}" placeholder="Informações Adicionais"></textarea>
                     </div>
                     
                   </div>
